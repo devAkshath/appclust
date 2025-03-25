@@ -8,7 +8,7 @@ export default function Homepage() {
           <br />
           Create Your Future
         </h1>
-        <h1 className="text-3xl font-medium font-[Libre_Baskerville] text-center  text-black-100">
+        <h1 className="text-3xl font-medium font-[Libre_Baskerville] text-center  text-black-100 dark:text-black-100">
           IMS is a software system for tracking inventory levels, orders, sales
           and deliveries.
         </h1>
