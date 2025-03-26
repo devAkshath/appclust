@@ -1,7 +1,7 @@
 export function Appimage() {
     return (
       <div className="appimage w-full h-screen overflow-hidden px-100">
-        <div data-scroll data-scroll-section data-scroll-speed="-.75"
+        <div data-scroll data-scroll-section data-scroll-speed=".0"
           className="w-full h-full bg-contain bg-center bg-no-repeat"
           style={{
             backgroundImage:

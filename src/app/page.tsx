@@ -4,8 +4,9 @@ import { useEffect } from "react";
 import Navbar from "./component/Navbar";
 import Homepage from "./component/Homepage";
 import Footer from "./component/Footer";
-import Marquee from "./component/Marquee";
-import About from "./component/About";
+// import Marquee from "./component/Marquee";
+import Parallaxcards from './component/ParallaxCards';
+
 import Appimage from "./component/Appimage";
 import Featured from "./component/Featured";
 import Price from "./component/Price";
@@ -31,9 +32,11 @@ function Home() {
     <main className="flex flex-col items-center w-full" data-scroll-container>
         <Homepage />
         {/* <Features/> */}
-        <Marquee />
-        <About />
+        {/* <Marquee /> */}
+        
+        
         <Appimage />
+        <Parallaxcards/>
         <Featured />
         <Price />
       </main>
