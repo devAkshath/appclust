@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer data-scroll data-scroll-section data-scroll-speed=".2" className="bg-white w-screen ">
+    <footer data-scroll data-scroll-section data-scroll-speed=".02" className="bg-white w-screen ">
       <div className="container mx-auto px-8 py-22 flex flex-wrap justify-between">
         {/* Product Section */}
         <div>
