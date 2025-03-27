@@ -8,9 +8,9 @@ import Footer from "./component/Footer";
 import Parallaxcards from './component/ParallaxCards';
 
 import Appimage from "./component/Appimage";
-import Featured from "./component/Featured";
+// import Featured from "./component/Featured";
 import Price from "./component/Price";
-// import Features from "./component/Features";
+import Features from "./component/Features";
 import LocomotiveScroll from "locomotive-scroll";
 
 function Home() {
@@ -37,8 +37,10 @@ function Home() {
         
         <Appimage />
         <Parallaxcards/>
-        <Featured />
         <Price />
+        <Features/>
+        {/* <Featured /> */}
+        
       </main>
 
       <footer className="w-full">

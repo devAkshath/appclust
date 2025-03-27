@@ -1,6 +1,6 @@
 export const projects = [
   {
-    title: "Ecommerce ",
+    title: "E-COMMERCE",
     description: "Originally hailing from Austria, Berlin-based photographer Matthias Leindinger is a young creative brimming with talent and ideas.",
     src: "rock.jpg",
     link: "https://img.freepik.com/free-vector/dashboard-concept-illustration_114360-4351.jpg?t=st=1742979043~exp=1742982643~hmac=6060eb5cb28a0b8fd199d01c0c1ead7b7a0e6a278386e312f092c5d797002ab9&w=996",

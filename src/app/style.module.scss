@@ -16,11 +16,11 @@
     padding:50px;
     transform-origin: top;
     h2{
-      font-weight: bold;
+      font-weight: bolder;
       font-size: large;
       text-align: center;
       margin: 0px;
-      font-size: 36px;
+      font-size: 46px;
     }
     .body{
       display: flex;
@@ -32,10 +32,10 @@
         width: 40%;
         position: relative;
         top: 10%;
-        p{font-weight: 300;
+        p{font-weight: 400;
           font-size: 16px;
           &::first-letter{
-            font-size: 28px;
+            font-size: 18px;
             font-family: 'Title';
           }
         }

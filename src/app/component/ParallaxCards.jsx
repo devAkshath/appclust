@@ -8,6 +8,7 @@ import { projects } from '../subcomponents/data';
 import styles from '../style.module.scss'; 
 
 
+
 export default function Home() {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
