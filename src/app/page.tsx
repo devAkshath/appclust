@@ -24,13 +24,15 @@ function Home() {
   }, []);
 
   return (
-    <div className="relative min-h-screen p-0 pb-0 gap-0 sm:p-0 font-[family-name:var(--font-geist-sans)]">
-      <header className="fixed top-0 left-0 right-0 z-50">
-        <Navbar />
-      </header>
+<div className="relative min-h-screen p-0 pb-12 sm:pb-0 gap-0 font-[family-name:var(--font-geist-sans)]">
+  <header className="fixed top-0 left-0 right-0 z-50">
+    <Navbar />
+  </header>
 
     <main className="flex flex-col items-center w-full" data-scroll-container>
-        <Homepage />
+        <Homepage  />
+
+
         {/* <Features/> */}
         {/* <Marquee /> */}
         

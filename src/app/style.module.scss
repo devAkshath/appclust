@@ -1,11 +1,12 @@
-.cardContainer{
+.cardContainer {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: sticky;
   top: 0px;
-  .card{
+
+  .card {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -13,37 +14,43 @@
     height: 700px;
     width: 1400px;
     border-radius: 25px;
-    padding:50px;
+    padding: 50px;
     transform-origin: top;
-    h2{
+
+    h2 {
       font-weight: bolder;
-      font-size: large;
+      font-size: 46px;
       text-align: center;
       margin: 0px;
-      font-size: 46px;
     }
-    .body{
+
+    .body {
       display: flex;
       height: 100%;
       margin-top: 50px;
       gap: 50px;
 
-      .description{
+      .description {
         width: 40%;
         position: relative;
         top: 10%;
-        p{font-weight: 400;
+
+        p {
+          font-weight: 400;
           font-size: 16px;
-          &::first-letter{
+
+          &::first-letter {
             font-size: 18px;
             font-family: 'Title';
           }
         }
-        span{
+
+        span {
           display: flex;
           align-items: center;
           gap: 5px;
-          a{
+
+          a {
             font-size: 12px;
             text-decoration: underline;
             cursor: pointer;
@@ -51,20 +58,105 @@
         }
       }
 
-      .imageContainer{
+      .imageContainer {
         position: relative;
         width: 60%;
         height: 100%;
         border-radius: 25px;
         overflow: hidden;
-        .inner{
+
+        .inner {
           width: 100%;
           height: 100%;
         }
-        img{
+
+        img {
+          width: 100%;
+          height: 100%;
           object-fit: cover;
         }
       }
     }
   }
-}
+
+  /* ✅ Responsive adjustments */
+  @media (max-width: 1200px) {
+    .card {
+      width: 90%;
+      height: 600px;
+      padding: 40px;
+
+      h2 {
+        font-size: 40px;
+      }
+
+      .body {
+        gap: 30px;
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+    .card {
+      height: 550px;
+      padding: 30px;
+
+      h2 {
+        font-size: 36px;
+      }
+
+      .body {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .description {
+        width: 100%;
+        text-align: center;
+
+        p {
+          font-size: 14px;
+        }
+      }
+
+      .imageContainer {
+        width: 90%;
+        height: 300px;
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    .card {
+      height: 500px;
+      padding: 20px;
+      top: -5%; // Reduce negative top margin to bring content higher
+  
+      h2 {
+        font-size: 28px; // Slightly smaller for better spacing
+        margin-bottom: 5px; // Reduce gap below the title
+      }
+  
+      .body {
+        margin-top: 0px;
+        gap: 100px; // Reduce gap between elements
+  
+        .description {
+          width: 100%; // Ensure it takes the full width
+          padding: 0 5px; // Reduce side padding for better fit
+          text-align: left; // Center text for better readability
+  
+          p {
+            font-size: 12px; // Slightly larger for better readability
+            line-height: 1.3; // Improve spacing between lines
+            margin-top: 0; // Remove unnecessary top margin
+          }
+        }
+      }
+  
+      .imageContainer {
+        width: 100%;
+        height: 220px; // Slightly smaller to give more space for text
+      }
+    }
+  }}  
